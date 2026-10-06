@@ -6,11 +6,11 @@
 /*   By: mahebrah <mahebrah@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 16:08:26 by mahebrah          #+#    #+#             */
-/*   Updated: 2026/10/05 21:03:41 by mahebrah         ###   ########.fr       */
+/*   Updated: 2026/10/06 18:01:28 by mahebrah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	return (c >= 0 && c <= 9);
+	return (c >= '0' && c <= '9');
 }
