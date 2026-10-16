@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-// #include <stdio.h>
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
@@ -24,7 +24,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-// #include <string.h>
+// #include <stdio.h>
 // int main(void)
 // {
 // 	// char str[] = "";
@@ -33,7 +33,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 	char	*strr = NULL;
 // 	printf("%s", (char*) ft_memcpy(str, strr, 2));
 // }
-//
+
 //
 	// if (!dest && !src)
 	// {
