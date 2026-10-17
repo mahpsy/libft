@@ -6,11 +6,10 @@
 /*   By: mahebrah <mahebrah@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 16:28:07 by mahebrah          #+#    #+#             */
-/*   Updated: 2026/10/14 19:50:04 by mahebrah         ###   ########.fr       */
+/*   Updated: 2026/10/17 18:48:33 by mahebrah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 // #include <stdio.h>
 
@@ -31,7 +30,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (n == 0)
 	{
-		return(dest);
+		return (dest);
 	}
 	if (dest > src)
 	{
@@ -49,12 +48,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // 	char str[] = "mahsa";
 // 	char	*src = &str[0];
 // 	char	*dest = &str[2];
-//
 // 	char	s[] = "mahsaishotaf";
+// 	char	s2[] = "mahsaishotaf";
+// 	char	s3[] = "mahsaishotaf";
 // 	printf("%s\n", (char *) memmove(s, s + 5, 5));
-// 	printf("%s\n", (char *) memmove(s + 5, s, 5));
-// 	printf("%s\n", (char *) ft_memmove(s, s + 5, 5));
+// 	printf("%s\n", (char *) memmove(s2 + 5, s2, 5));
+// 	printf("%s\n", (char *) ft_memmove(s3, s3 + 5, 5));
 // 	printf("%s\n", (char *) ft_memmove(s + 5, s, 5));
 // 	printf("%s", (char*) ft_memmove(dest, src, 2));
 // }
-
