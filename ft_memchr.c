@@ -14,20 +14,32 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	char *str;
+	size_t			i;
+	unsigned char	*str;
 
-	str = (char *)s;
+	str = (unsigned char *)s;
 	i = 0;
-	while (str[i] != '\0')
+	while (i < n)
 	{
-		if (str[i] != c)
+		if (str[i] != (unsigned char)c)
 		{
 			i++;
 		}
 		else
 			return (str + i);
 	}
-	return (str + i);
+	return (NULL);
 }
 
+// #include <stdio.h>
+// #include <string.h>
+// int	main (void)
+// {
+// 	char	*s = "mahsa";
+// 	printf("%s\n", (char *)ft_memchr(s, 'a', 5));
+// 	printf("%s\n", (char *)ft_memchr(s, '\0', 6));
+// 	printf("%s\n", (char *)ft_memchr(s, 'z', 5));
+// 	printf("%s\n", (char *)memchr(s, 'a', 5));
+// 	printf("%s\n", (char *)memchr(s, '\0', 6));
+// 	printf("%s\n", (char *)memchr(s, 'z', 5));
+// }

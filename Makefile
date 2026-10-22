@@ -13,7 +13,13 @@ SRC =	ft_bzero.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_tolower.c \
-		ft_toupper.c
+		ft_toupper.c \
+		ft_strncmp.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_strnstr.c \
+		ft_atoi
+
 
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
@@ -40,6 +46,6 @@ fclean : clean
 
 re : fclean all
 
-bonus : all
+# bonus : all
 
 .PHONY : all clean fclean re bonus test
