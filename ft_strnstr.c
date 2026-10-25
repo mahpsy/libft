@@ -11,45 +11,39 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+// #include <stddef.h>
+// #include <string.h>
 
-char	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t lil;
-
-	lil = strlen(little);
-	i = 0;
-	if (!little[0])
-	{
-		return(big);
-	}
-	if (lil > len)
-	{
-		return (NULL);
-	}
-	while (big[i] && len)
-	{
-		
-	}
-	
-	/*
 	size_t	i;
 	size_t	j;
+	size_t	k;
 
 	i = 0;
+	if (little[i] == '\0')
+	{
+		return ((char *)big);
+	}
 	while (big[i] && i < len)
 	{
 		j = 0;
-		while (little[j])
-		if (big[i + j] == little[j])
+		k = i;
+		while (big[k] == little[j] && k < len)
 		{
-			i++;
+			j++;
+			k++;
+			if (little[j] == '\0')
+			{
+				return ((char *)big + i);
+			}
 		}
-		else
 		i++;
-		j++;
 	}
-	*/ 
-	// return (big);
+	return (0);
 }
+//
+// int main(void)
+// {
+// 	ft_strnstr("lorem ipsum dolor sit amet", "lorem", 15);
+// }

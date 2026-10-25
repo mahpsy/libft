@@ -6,7 +6,7 @@
 /*   By: mahebrah <mahebrah@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 21:23:46 by mahebrah          #+#    #+#             */
-/*   Updated: 2026/10/22 22:15:26 by mahebrah         ###   ########.fr       */
+/*   Updated: 2026/10/25 18:16:41 by mahebrah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	if (nmemb == 0 || size == 0)
-		return (NULL);
+		return (malloc(0));
 	if (SIZE_MAX / nmemb < size)
 		return (NULL);
 	ptr = malloc(nmemb * size);

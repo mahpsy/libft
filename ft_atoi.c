@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	sign;
@@ -21,7 +21,8 @@ int	atoi(const char *nptr)
 	i = 0;
 	sign = 1;
 	result = 0;
-	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
+	while ((nptr[i] >= '\t' && nptr[i] <= '\r')
+		|| nptr[i] == ' ')
 		i++;
 	if (nptr[i] == '-')
 	{
@@ -34,6 +35,7 @@ int	atoi(const char *nptr)
 	{
 		result *= 10;
 		result += nptr[i] - '0';
+		i++;
 	}
 	return (result * sign);
 }
