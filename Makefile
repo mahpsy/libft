@@ -6,7 +6,7 @@
 #    By: mahebrah <mahebrah@student.codam.nl>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/25 18:08:56 by mahebrah          #+#    #+#              #
-#    Updated: 2026/10/25 18:34:57 by mahebrah         ###   ########.fr        #
+#    Updated: 2026/10/26 23:43:17 by mahebrah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,10 @@ SRC =	ft_bzero.c \
 		ft_strdup.c \
 		ft_calloc.c \
 		ft_strjoin.c \
-		ft_substr.c
+		ft_substr.c \
+		ft_striteri.c \
+		ft_strmapi.c \
+		ft_putchar_fd.c
 
 OBJ = $(SRC:.c=.o)
 NAME = libft.a

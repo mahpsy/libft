@@ -6,7 +6,7 @@
 /*   By: mahebrah <mahebrah@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 20:12:55 by mahebrah          #+#    #+#             */
-/*   Updated: 2026/10/25 22:43:16 by mahebrah         ###   ########.fr       */
+/*   Updated: 2026/10/26 23:01:44 by mahebrah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (str);
 	}
 	if (len > ft_strlen(s + start))
-	{
 		len = (ft_strlen(s + start));
-		str = ft_calloc(len + 1, 1);
-		if (!str)
-			return (0);
-	}
-	return ((char *)ft_strlcpy(str, s, len));
+	str = ft_calloc(len + 1, 1);
+	if (!str)
+		return (0);
+	ft_strlcpy(str, s + start, len + 1);
+	return (str);
 }
