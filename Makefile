@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: mahebrah <mahebrah@student.codam.nl>       +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/25 18:08:56 by mahebrah          #+#    #+#              #
-#    Updated: 2026/10/26 23:43:17 by mahebrah         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 SRC =	ft_bzero.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
@@ -37,7 +25,8 @@ SRC =	ft_bzero.c \
 		ft_substr.c \
 		ft_striteri.c \
 		ft_strmapi.c \
-		ft_putchar_fd.c
+		ft_putchar_fd.c \
+		ft_strtrim.c
 
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
