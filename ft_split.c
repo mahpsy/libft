@@ -63,7 +63,6 @@ static char	**makewords(char **str, char const *s, char c)
 	size_t	start;
 	size_t	j;
 
-	start = 0;
 	i = 0;
 	j = 0;
 	while (s[i])
