@@ -31,7 +31,9 @@ SRC =	ft_bzero.c \
 		ft_itoa.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c \
+		ft_lstnew.c \
+		ft_lstadd_front.c
 
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
@@ -58,6 +60,6 @@ fclean : clean
 
 re : fclean all
 
-# bonus : all
+bonus : all
 
 .PHONY : all clean fclean re bonus test
