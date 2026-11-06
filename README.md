@@ -83,9 +83,9 @@ Allocates memory and creates a substring from `s`, starting at the given index a
 
 **Parameters:**
 
-• `s`: The original string..
-• `start`: The starting index..
-• `len`: The maximum length of the substring..
+- `s`: The original string.
+- `start`: The starting index.
+- `len`: The maximum length of the substring.
 
 **Returns:** A pointer to the newly allocated substring, or `NULL` if allocation fails.
 
@@ -99,8 +99,8 @@ Allocates memory and joins two strings into a new string.
 
 **Parameters:**
 
-• `s1`: The first string..
-• `s2`: The second string..
+- `s1`: The first string.
+- `s2`: The second string.
 
 **Returns:** A pointer to the newly allocated string, or `NULL` if allocation fails.
 
@@ -114,8 +114,8 @@ Creates a new string by removing all characters found in `set` from the beginnin
 
 **Parameters:**
 
-• `s1`: The string to trim..
-• `set`: The characters to remove..
+- `s1`: The string to trim.
+- `set`: The characters to remove.
 
 **Returns:** The newly allocated trimmed string, or `NULL` if allocation fails.
 
@@ -129,8 +129,8 @@ Splits a string into an array of strings using a specified character as a delimi
 
 **Parameters:**
 
-• `s`: The string to split..
-• `c`: The delimiter character..
+- `s`: The string to split.
+- `c`: The delimiter character.
 
 **Returns:** A newly allocated NULL-terminated array of strings, or `NULL` if allocation fails.
 
@@ -144,7 +144,7 @@ Converts an integer into its string representation.
 
 **Parameters:**
 
-• `n`: The integer to convert..
+- `n`: The integer to convert.
 
 **Returns:** The newly allocated string representing the integer, or `NULL` if allocation fails.
 
@@ -158,8 +158,8 @@ Applies a function to each character of a string, using its index, and creates a
 
 **Parameters:**
 
-• `s`: The original string..
-• `f`: The function to apply to each character..
+- `s`: The original string.
+- `f`: The function to apply to each character.
 
 **Returns:** The newly allocated string, or `NULL` if allocation fails.
 
@@ -173,8 +173,8 @@ Applies a function to each character of a string, passing its index and address.
 
 **Parameters:**
 
-• `s`: The string to iterate through..
-• `f`: The function to apply to each character..
+- `s`: The string to iterate through.
+- `f`: The function to apply to each character.
 
 **Returns:** Nothing (`void`).
 
@@ -188,8 +188,8 @@ Writes a single character to the specified file descriptor.
 
 **Parameters:**
 
-• `c`: The character to write..
-• `fd`: The file descriptor..
+- `c`: The character to write.
+- `fd`: The file descriptor.
 
 **Returns:** Nothing (`void`).
 
@@ -203,8 +203,8 @@ Writes a string to the specified file descriptor.
 
 **Parameters:**
 
-• `s`: The string to write..
-• `fd`: The file descriptor..
+- `s`: The string to write.
+- `fd`: The file descriptor.
 
 **Returns:** Nothing (`void`).
 
@@ -218,8 +218,8 @@ Writes a string followed by a newline to the specified file descriptor.
 
 **Parameters:**
 
-• `s`: The string to write..
-• `fd`: The file descriptor..
+- `s`: The string to write.
+- `fd`: The file descriptor.
 
 **Returns:** Nothing (`void`).
 
@@ -233,8 +233,8 @@ Writes an integer in decimal form to the specified file descriptor.
 
 **Parameters:**
 
-• `n`: The integer to write..
-• `fd`: The file descriptor..
+- `n`: The integer to write.
+- `fd`: The file descriptor.
 
 **Returns:** Nothing (`void`).
 
@@ -256,7 +256,7 @@ Allocates memory for a new node, initializes its content with the provided point
 
 **Parameters:**
 
-• `content`: The content to store in the new node..
+- `content`: The content to store in the new node.
 
 **Returns:** A pointer to the new node, or `NULL` if allocation fails.
 
@@ -270,8 +270,8 @@ Adds a new node to the beginning of a linked list.
 
 **Parameters:**
 
-• `lst`: A pointer to the pointer to the first node..
-• `new`: The node to add..
+- `lst`: A pointer to the pointer to the first node.
+- `new`: The node to add.
 
 **Returns:** Nothing (`void`).
 
@@ -285,7 +285,7 @@ Counts the number of nodes in a linked list.
 
 **Parameters:**
 
-• `lst`: A pointer to the first node..
+• `lst`: A pointer to the first node.
 
 **Returns:** The total number of nodes in the list.
 
@@ -299,7 +299,7 @@ Traverses the list and finds its last node.
 
 **Parameters:**
 
-• `lst`: A pointer to the first node..
+- `lst`: A pointer to the first node.
 
 **Returns:** A pointer to the last node, or `NULL` if the list is empty.
 
@@ -313,8 +313,8 @@ Adds a new node to the end of a linked list.
 
 **Parameters:**
 
-• `lst`: A pointer to the pointer to the first node..
-• `new`: The node to add..
+- `lst`: A pointer to the pointer to the first node.
+- `new`: The node to add.
 
 **Returns:** Nothing (`void`).
 
@@ -328,8 +328,8 @@ Deletes a single node by applying the function `del` to its content and freeing 
 
 **Parameters:**
 
-• `lst`: The node to delete..
-• `del`: The function used to delete the node's content..
+- `lst`: The node to delete.
+- `del`: The function used to delete the node's content.
 
 **Returns:** Nothing (`void`).
 
@@ -343,8 +343,8 @@ Deletes and frees a node and all the following nodes, using `del` to free their 
 
 **Parameters:**
 
-• `lst`: A pointer to the pointer to the first node to delete..
-• `del`: The function used to delete each node's content..
+- `lst`: A pointer to the pointer to the first node to delete.
+- `del`: The function used to delete each node's content.
 
 **Returns:** Nothing (`void`).
 
@@ -358,8 +358,8 @@ Iterates through the linked list and applies the function `f` to the content of 
 
 **Parameters:**
 
-• `lst`: A pointer to the first node..
-• `f`: The function to apply to each node's content..
+- `lst`: A pointer to the first node.
+- `f`: The function to apply to each node's content.
 
 **Returns:** Nothing (`void`).
 
@@ -375,9 +375,9 @@ If allocation fails, the function uses `del` to clean up the content of the newl
 
 **Parameters:**
 
-• `lst`: A pointer to the first node of the original list..
-• `f`: The function used to transform each node's content..
-• `del`: The function used to clean up newly created content if allocation fails..
+- `lst`: A pointer to the first node of the original list.
+- `f`: The function used to transform each node's content.
+- `del`: The function used to clean up newly created content if allocation fails.
 
 **Returns:** A pointer to the first node of the new list, or `NULL` if allocation fails.
 
@@ -388,7 +388,7 @@ The following resources were used for learning and understanding the concepts co
 - **42 Libft subject:** Project requirements and function specifications.
 - **C manual pages (`man`):** Documentation of standard C library functions.
 - **[Harvard CS50](https://www.youtube.com/@cs50):** Lectures on C programming, pointers, memory management, and data structures.
-- **[Python Tutor](https://pythontutor.com/):** Used to visualize C code execution, pointers, and memory management..
+- **[Python Tutor](https://pythontutor.com/):** Used to visualize C code execution, pointers, and memory management.
 
 ### AI Usage
 
